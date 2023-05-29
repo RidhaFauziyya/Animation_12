@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/blue2">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Zombie by Day6"
+            android:textColor="@color/abu_tua"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:id="@+id/image_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@id/image_detail_png"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/zombie1"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/next_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/right"
+        app:layout_constraintTop_toBottomOf="@id/image_detail"
+        app:layout_constraintEnd_toEndOf="@id/image_detail"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_song"
+        android:textColor="@color/black_dove"
+        android:text="Zombie"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/image_detail"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="55dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/artis_song"
+        android:textColor="@color/black_dove"
+        android:text="Day6"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/title_song"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="55dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="280dp"
+        android:layout_height="2dp"
+        android:background="@color/abu_tua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/artis_song"
+        android:layout_marginTop="70dp"
+        />
+
+    <ImageView
+        android:id="@+id/cirlce_play"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/artis_song"
+        android:layout_marginTop="62dp"
+        android:layout_marginStart="55dp"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/play"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/love"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintStart_toEndOf="@id/play_button"
+        android:src="@drawable/hearts"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="50dp"/>
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintEnd_toStartOf="@id/play_button"
+        android:src="@drawable/arrow"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
